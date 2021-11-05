@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+input,
+button {
+  font-family: "Zen Antique", serif;
+}
+input,
+button {
+  font-size: 16px;
+}
+.head_bar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(16, 115, 202);
+}
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.input_section > h2 {
+  text-align: center;
+}
+.input_section > form > .input {
+  margin: 8px 0;
+}
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.input_section > form > .input > label {
+  font-weight: bold;
+}
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+.input_section > form > .input_inline > label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.input_section > form > button {
+  background-color: rgb(16, 115, 202);
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+.search_section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+.search_section > form > button {
+  background-color: rgb(16, 115, 202);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+.book_shelf > h2 {
+  color: cornflowerblue;
+}
+.book_shelf > .book_list {
+  padding: 16px;
+}
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+footer {
+  padding: 20px;
+  background-color: rgb(16, 115, 202);
+  text-align: center;
+  font-weight: bold;
+}

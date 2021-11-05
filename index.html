@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1 class="head_bar__title">Bookshelf Apps : membaca jendela dunia</h1>
+    </header>
+
+    <main>
+      <section class="input_section">
+        <h2>Masukkan Data Buku</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul Buku</label>
+            <input id="inputBookTitle" type="text" required placeholder="Masukkan judul buku" />
+          </div>
+
+          <div class="input">
+            <label for="inputBookAuthor">Penulis Buku</label>
+            <input id="inputBookAuthor" type="text" required placeholder="Masukkan penulis buku" />
+          </div>
+
+          <div class="input">
+            <label for="inputBookYear">Tahun Penulisan</label>
+            <input id="inputBookYear" type="number" required placeholder="Masukkan tahun penulisan" />
+          </div>
+
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Tandai Selesai Dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+
+          <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+        </form>
+      </section>
+
+      <section class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="searchBook">
+          <label for="searchBookTitle">Judul Buku</label>
+          <input id="searchBookTitle" type="text" placeholder="Cari judul buku" />
+          <button id="searchSubmit" type="submit">Cari Buku</button>
+        </form>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Belum Selesai Dibaca</h2>
+
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Selesai Dibaca</h2>
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Tugas submission <a href="https://github.com/yusufstawan">@yusufstawan</a> "Belajar Membuat Front-End Web untuk Pemula" &#169; 2021, Dicoding Academy</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
